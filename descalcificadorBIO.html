@@ -245,7 +245,7 @@
 
     .home-list {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 0 30px;
       margin: 0;
       padding: 0;
@@ -255,6 +255,30 @@
     .home-list li { padding: 13px 0; border-top: 1px solid var(--line); }
     .home-list strong { display: block; margin-bottom: 3px; }
     .home-list span { color: var(--muted); font-size: .88rem; }
+
+    .home-uses-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(220px, .9fr);
+      align-items: center;
+      gap: 28px;
+    }
+
+    .home-uses-figure { margin: 0; }
+
+    .home-uses-figure img {
+      display: block;
+      width: min(100%, 360px);
+      max-height: 480px;
+      height: auto;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+
+    .home-uses-figure figcaption {
+      color: var(--muted);
+      font-size: .75rem;
+      text-align: center;
+    }
 
     .warning {
       margin: 0 0 42px;
@@ -336,7 +360,8 @@
       .application-photo figcaption { padding: 13px 16px; }
       .table-wrap { overflow-x: auto; }
       table { min-width: 590px; }
-      .home-list { grid-template-columns: 1fr; }
+      .home-uses-layout { grid-template-columns: 1fr; }
+      .home-uses-figure img { width: min(100%, 340px); }
       .store { align-items: flex-start; flex-direction: column; }
       .footer { flex-direction: column; }
       .print-button { right: 14px; bottom: 14px; }
@@ -437,11 +462,17 @@
     <section aria-labelledby="multiuso">
       <p class="section-kicker">04 · Otros usos</p>
       <h2 id="multiuso">Métodos multiuso en el hogar</h2>
-      <ul class="home-list">
-        <li><strong>Filtros y lavavajillas</strong><span>Coloca 2 cucharadas en el cajetín de detergente y realiza un ciclo de lavado vacío para eliminar sarro y grasa.</span></li>
-        <li><strong>Termos y utensilios</strong><span>Llena con agua tibia y 1 cucharada de producto. Deja reposar 15 minutos y enjuaga.</span></li>
-        <li><strong>Limpiador multisuperficie</strong><span>Mezcla 2 cucharadas en 500 ml de agua con unas gotas de detergente suave para cubiertas y azulejos.</span></li>
-      </ul>
+      <div class="home-uses-layout">
+        <ul class="home-list">
+          <li><strong>Filtros y lavavajillas</strong><span>Coloca 2 cucharadas en el cajetín de detergente y realiza un ciclo de lavado vacío para eliminar sarro y grasa.</span></li>
+          <li><strong>Termos y utensilios</strong><span>Llena con agua tibia y 1 cucharada de producto. Deja reposar 15 minutos y enjuaga.</span></li>
+          <li><strong>Limpiador multisuperficie</strong><span>Mezcla 2 cucharadas en 500 ml de agua con unas gotas de detergente suave para cubiertas y azulejos.</span></li>
+        </ul>
+        <figure class="home-uses-figure">
+          <img src="img/biodescalcificador/7 usos.jpg" alt="Infografía con siete usos domésticos del BIO Descalcificador">
+          <figcaption>Siete ideas de uso para el hogar.</figcaption>
+        </figure>
+      </div>
     </section>
 
     <aside class="warning" aria-label="Precaución importante">
