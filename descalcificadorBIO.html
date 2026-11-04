@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manual de uso del BIO Descalcificador TuCompraOk: dosis, aplicaciones y precauciones.">
+  <title>Manual de uso | BIO Descalcificador TuCompraOk</title>
+  <style>
+    :root {
+      --ink: #173a35;
+      --muted: #5b6b67;
+      --green: #2f725f;
+      --green-pale: #eaf2ed;
+      --orange: #d76632;
+      --paper: #fffefa;
+      --line: #dce5df;
+      --warning: #a63e2d;
+      --warning-pale: #fff3ed;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 32px 18px;
+      background: #edf2ef;
+      color: var(--ink);
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    .manual {
+      width: min(100%, 980px);
+      margin: 0 auto;
+      padding: 52px 68px 40px;
+      background: var(--paper);
+      box-shadow: 0 18px 55px rgba(23, 58, 53, .12);
+    }
+
+    .topline, .footer, .section-kicker, .brand {
+      font-size: .73rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .brand-logo {
+      display: block;
+      width: 154px;
+      height: auto;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(230px, .9fr);
+      align-items: center;
+      gap: 38px;
+      padding: 38px 0 34px;
+      border-bottom: 3px solid var(--green);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--orange);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1, h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 500px;
+      margin-bottom: 14px;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.03;
+      font-weight: 500;
+    }
+
+    .intro {
+      max-width: 440px;
+      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .formula {
+      display: inline-block;
+      padding: 7px 11px;
+      border: 1px solid #b9d1c5;
+      color: var(--green);
+      font-size: .84rem;
+      font-weight: 700;
+    }
+
+    .product-figure {
+      margin: 0;
+      padding: 12px;
+      background: #f1f5f1;
+      border: 1px solid var(--line);
+    }
+
+    .product-figure img {
+      display: block;
+      width: 100%;
+      max-height: 330px;
+      object-fit: contain;
+    }
+
+    figcaption {
+      padding: 9px 5px 1px;
+      color: var(--muted);
+      font-size: .75rem;
+    }
+
+    .quick-facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0 0 42px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .quick-facts div {
+      padding: 17px 18px 17px 0;
+    }
+
+    .quick-facts div + div {
+      padding-left: 18px;
+      border-left: 1px solid var(--line);
+    }
+
+    .quick-facts strong, .quick-facts span { display: block; }
+    .quick-facts strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.2rem; }
+    .quick-facts span { color: var(--muted); font-size: .78rem; }
+
+    section { margin: 0 0 42px; }
+
+    .section-kicker {
+      margin-bottom: 5px;
+      color: var(--orange);
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      font-size: 1.8rem;
+      line-height: 1.2;
+      font-weight: 500;
+    }
+
+    h3 { margin-bottom: 7px; font-size: 1rem; }
+
+    .dose-panel {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      align-items: center;
+      gap: 24px;
+      padding: 22px 24px;
+      background: var(--green-pale);
+      border-left: 4px solid var(--green);
+    }
+
+    .dose-number {
+      color: var(--green);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.6rem;
+      line-height: 1.15;
+    }
+
+    .dose-number span { display: block; font-size: .82rem; font-family: "Trebuchet MS", "Segoe UI", sans-serif; }
+    .dose-panel p { margin: 0; color: var(--muted); }
+
+    .application-photo {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      align-items: center;
+      gap: 25px;
+      margin: 24px 0 20px;
+      background: #f1f5f1;
+    }
+
+    .application-photo img {
+      display: block;
+      width: 100%;
+      height: 245px;
+      object-fit: cover;
+    }
+
+    .application-photo figcaption { padding: 20px; font-size: .85rem; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-top: 2px solid var(--green);
+    }
+
+    th, td {
+      padding: 13px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: .88rem;
+    }
+
+    th {
+      color: var(--green);
+      font-size: .73rem;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    td:first-child { width: 24%; font-weight: 700; }
+    td:nth-child(2) { width: 17%; white-space: nowrap; color: var(--green); font-weight: 700; }
+
+    .steps {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: step;
+    }
+
+    .steps li {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+      counter-increment: step;
+    }
+
+    .steps li::before {
+      content: counter(step, decimal-leading-zero);
+      color: var(--orange);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.15rem;
+    }
+
+    .steps p { margin: 0; }
+
+    .home-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 30px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .home-list li { padding: 13px 0; border-top: 1px solid var(--line); }
+    .home-list strong { display: block; margin-bottom: 3px; }
+    .home-list span { color: var(--muted); font-size: .88rem; }
+
+    .warning {
+      margin: 0 0 42px;
+      padding: 18px 22px;
+      background: var(--warning-pale);
+      border: 1px solid #e8b6a8;
+      color: var(--warning);
+    }
+
+    .warning strong { display: block; margin-bottom: 5px; }
+    .warning p { margin: 0; font-size: .9rem; }
+
+    .practice-list { margin: 0; padding-left: 20px; }
+    .practice-list li { margin: 8px 0; padding-left: 3px; }
+    .practice-list strong { color: var(--ink); }
+
+    .store {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 22px;
+      padding: 22px 0;
+      border-top: 2px solid var(--green);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .store p { margin: 0; color: var(--muted); }
+    .store strong { color: var(--ink); }
+    .store a { color: var(--green); font-weight: 700; text-underline-offset: 3px; }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-top: 18px;
+      color: var(--muted);
+      font-size: .65rem;
+    }
+
+    .print-button {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      padding: 12px 18px;
+      border: 0;
+      background: var(--ink);
+      color: white;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(23, 58, 53, .2);
+    }
+
+    @media (max-width: 680px) {
+      body { padding: 0; background: var(--paper); }
+      .manual { padding: 24px 22px 28px; box-shadow: none; }
+      .topline { font-size: .62rem; }
+      .brand-logo { width: 128px; }
+      .hero { grid-template-columns: 1fr; gap: 20px; padding: 30px 0 24px; }
+      h1 { font-size: 2.8rem; }
+      .product-figure { max-width: 390px; margin: 0 auto; }
+      .quick-facts { margin-bottom: 32px; }
+      .quick-facts div { padding: 13px 8px 13px 0; }
+      .quick-facts div + div { padding-left: 9px; }
+      .quick-facts strong { font-size: 1rem; }
+      .quick-facts span { font-size: .68rem; }
+      section, .warning { margin-bottom: 32px; }
+      .dose-panel { grid-template-columns: 1fr; gap: 8px; padding: 18px; }
+      .application-photo { grid-template-columns: 1fr; gap: 0; }
+      .application-photo img { height: 210px; }
+      .application-photo figcaption { padding: 13px 16px; }
+      .table-wrap { overflow-x: auto; }
+      table { min-width: 590px; }
+      .home-list { grid-template-columns: 1fr; }
+      .store { align-items: flex-start; flex-direction: column; }
+      .footer { flex-direction: column; }
+      .print-button { right: 14px; bottom: 14px; }
+    }
+
+    @page { size: A4; margin: 16mm; }
+
+    @media print {
+      body { padding: 0; background: white; font-size: 10pt; }
+      .manual { width: auto; max-width: none; padding: 0; box-shadow: none; }
+      .hero { grid-template-columns: 1.1fr .9fr; gap: 24px; padding-top: 24px; }
+      h1 { font-size: 34pt; }
+      .product-figure img { max-height: 245px; }
+      section, .warning, .application-photo, .dose-panel, .store { break-inside: avoid; }
+      .print-button { display: none; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <main class="manual">
+    <div class="topline">
+      <img class="brand-logo" src="img/biodescalcificador/logo_recto.png" alt="TuCompraOk">
+      <span>Manual de uso · BIO Descalcificador</span>
+    </div>
+
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Guía práctica para el hogar</p>
+        <h1>BIO Descalcificador</h1>
+        <p class="intro">Instrucciones de preparación y aplicación para ayudar a remover depósitos de sarro en equipos y superficies compatibles.</p>
+        <span class="formula">Ácido cítrico anhidro · Grado alimentario</span>
+      </div>
+      <figure class="product-figure">
+        <img src="img/biodescalcificador/9b717f8f-8c7c-4c95-9fa8-e64cc560f2a8.png" alt="Envase TuCompraOk BIO Descalcificador">
+        <figcaption>Presentación del BIO Descalcificador TuCompraOk.</figcaption>
+      </figure>
+    </header>
+
+    <div class="quick-facts" aria-label="Resumen de la guía">
+      <div><strong>15–30 g</strong><span>Dosis general por 500 ml</span></div>
+      <div><strong>10–20 min</strong><span>Tiempo según aplicación</span></div>
+      <div><strong>Enjuagar</strong><span>Con abundante agua al finalizar</span></div>
+    </div>
+
+    <section aria-labelledby="preparacion">
+      <p class="section-kicker">01 · Preparación</p>
+      <h2 id="preparacion">Dosis base para limpieza general</h2>
+      <div class="dose-panel">
+        <div class="dose-number">1–2 cucharadas<span>15–30 g de producto</span></div>
+        <p>Disuelve la dosis en <strong>500 ml de agua tibia</strong>. Espera a que el producto se disuelva completamente antes de aplicarlo.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="aplicaciones">
+      <p class="section-kicker">02 · Aplicaciones</p>
+      <h2 id="aplicaciones">Desincrustación paso a paso</h2>
+      <figure class="application-photo">
+        <img src="img/biodescalcificador/Kraft_pouch_coffee_descaler_label_2K_20261019171721.jpg" alt="Aplicación de descalcificador en un hervidor y una grifería">
+        <figcaption>Prepara la solución justo antes de usarla. Respeta el tiempo indicado y enjuaga bien al terminar.</figcaption>
+      </figure>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Aplicación</th><th>Tiempo</th><th>Instrucciones</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hervidores y cafeteras</td>
+              <td>10–15 min</td>
+              <td>Disuelve en agua tibia, llena el depósito y, al terminar, enjuaga con abundante agua.</td>
+            </tr>
+            <tr>
+              <td>Grifería y duchas</td>
+              <td>10–15 min</td>
+              <td>Aplica con pulverizador o esponja sobre el sarro y luego enjuaga.</td>
+            </tr>
+            <tr>
+              <td>Sanitarios y azulejos</td>
+              <td>15–20 min</td>
+              <td>Aplica directamente sobre manchas de agua o sarro acumulado y enjuaga.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="pasta">
+      <p class="section-kicker">03 · Tratamiento localizado</p>
+      <h2 id="pasta">Preparación de pasta desincrustante</h2>
+      <ol class="steps">
+        <li><p>Mezcla 1 cucharada del producto con unas gotas de agua tibia hasta formar una pasta espesa.</p></li>
+        <li><p>Aplica la pasta directamente sobre la zona con sarro o la mancha difícil.</p></li>
+        <li><p>Deja actuar de 10 a 15 minutos.</p></li>
+        <li><p>Frota suavemente con un cepillo o esponja y enjuaga con abundante agua.</p></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="multiuso">
+      <p class="section-kicker">04 · Otros usos</p>
+      <h2 id="multiuso">Métodos multiuso en el hogar</h2>
+      <ul class="home-list">
+        <li><strong>Filtros y lavavajillas</strong><span>Coloca 2 cucharadas en el cajetín de detergente y realiza un ciclo de lavado vacío para eliminar sarro y grasa.</span></li>
+        <li><strong>Termos y utensilios</strong><span>Llena con agua tibia y 1 cucharada de producto. Deja reposar 15 minutos y enjuaga.</span></li>
+        <li><strong>Limpiador multisuperficie</strong><span>Mezcla 2 cucharadas en 500 ml de agua con unas gotas de detergente suave para cubiertas y azulejos.</span></li>
+      </ul>
+    </section>
+
+    <aside class="warning" aria-label="Precaución importante">
+      <strong>Precaución importante</strong>
+      <p>No usar en mármol, granito ni piedras naturales. No mezclar directamente con cloro ni percarbonato de sodio.</p>
+    </aside>
+
+    <section aria-labelledby="seguridad">
+      <p class="section-kicker">05 · Cuidado y seguridad</p>
+      <h2 id="seguridad">Buenas prácticas y emergencias</h2>
+      <ul class="practice-list">
+        <li><strong>Prueba de compatibilidad:</strong> aplica primero en una zona poco visible si tienes dudas sobre la superficie.</li>
+        <li><strong>Almacenamiento:</strong> conserva el producto bien cerrado, en un lugar seco y fresco, fuera del alcance de niños y mascotas.</li>
+        <li><strong>Contacto con ojos o piel:</strong> enjuaga con abundante agua limpia. En caso de ingesta accidental, bebe abundante agua y no induzcas el vómito.</li>
+      </ul>
+    </section>
+
+    <div class="store">
+      <p><strong>¿Necesitas recargar?</strong><br>Obtén un 5% de descuento con el cupón del empaque.</p>
+      <a href="https://tucompraok.online" target="_blank" rel="noopener noreferrer">Visitar tucompraok.online</a>
+    </div>
+
+    <footer class="footer">
+      <span>TuCompraOk · Guía de uso del producto</span>
+      <span>Conservar junto al empaque para futuras consultas</span>
+    </footer>
+  </main>
+
+  <button class="print-button" type="button" onclick="window.print()" aria-label="Imprimir o guardar como PDF">Imprimir / Guardar PDF</button>
+</body>
+</html>
