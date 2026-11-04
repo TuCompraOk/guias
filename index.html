@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guías de uso de productos TuCompraOk.">
+  <title>Guías de uso | TuCompraOk</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #173a35;
+      --muted: #5b6b67;
+      --green: #2f725f;
+      --green-pale: #eaf2ed;
+      --orange: #d76632;
+      --paper: #fffefa;
+      --line: #dce5df;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 28px 20px;
+      background: radial-gradient(ellipse at 12% 8%, #fffefa 0, transparent 38%), #edf2ef;
+      color: var(--ink);
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    .page {
+      width: min(100%, 900px);
+      margin: 0 auto;
+    }
+
+    .topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 0 0 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .logo { display: block; width: 146px; height: auto; }
+
+    .topline span, .eyebrow {
+      color: var(--muted);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    main { padding: 58px 0 40px; }
+
+    .eyebrow { margin: 0 0 8px; color: var(--orange); }
+
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; letter-spacing: 0; }
+
+    h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+
+    .intro { margin: 10px 0 30px; color: var(--muted); }
+
+    .guide-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 2px solid var(--green);
+    }
+
+    .guide {
+      display: grid;
+      grid-template-columns: 152px minmax(0, 1fr);
+      align-items: center;
+      gap: 26px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .guide img {
+      display: block;
+      width: 152px;
+      height: 164px;
+      padding: 10px;
+      background: var(--green-pale);
+      object-fit: contain;
+    }
+
+    .guide h2 { margin: 0 0 6px; font-size: 1.55rem; font-weight: 500; }
+    .guide p { margin: 0 0 16px; color: var(--muted); }
+
+    .guide-link {
+      display: inline-block;
+      padding: 8px 13px;
+      border: 1px solid var(--green);
+      color: var(--green);
+      font-size: .88rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .guide-link:hover, .guide-link:focus-visible {
+      background: var(--green);
+      color: white;
+    }
+
+    .guide-link:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+
+    footer {
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .78rem;
+    }
+
+    @media (max-width: 560px) {
+      body { padding: 20px 16px; }
+      main { padding-top: 40px; }
+      h1 { font-size: 2.2rem; }
+      .guide { grid-template-columns: 96px minmax(0, 1fr); gap: 16px; }
+      .guide img { width: 96px; height: 124px; }
+      .guide h2 { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topline">
+      <img class="logo" src="img/biodescalcificador/logo_recto.png" alt="TuCompraOk">
+      <span>Centro de guías</span>
+    </header>
+
+    <main>
+      <p class="eyebrow">TuCompraOk</p>
+      <h1>Guías de uso</h1>
+      <p class="intro">Manuales y recomendaciones para tus productos.</p>
+
+      <ul class="guide-list" aria-label="Guías disponibles">
+        <li class="guide">
+          <img src="img/biodescalcificador/9b717f8f-8c7c-4c95-9fa8-e64cc560f2a8.png" alt="Envase BIO Descalcificador TuCompraOk">
+          <div>
+            <h2>BIO Descalcificador</h2>
+            <p>Dosis, aplicaciones y precauciones para la limpieza del hogar.</p>
+            <a class="guide-link" href="descalcificadorBIO.html">Abrir guía</a>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <footer>TuCompraOk · Guías de uso</footer>
+  </div>
+</body>
+</html>
